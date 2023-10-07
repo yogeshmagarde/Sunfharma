@@ -1,0 +1,192 @@
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Recognition</title>
+</head>
+<body>
+    <h1>Speech Recognition</h1>
+    
+    <form action="/recognize" method="POST">
+        <button type="submit">Start Recording</button>
+    </form>
+    
+    {% if text %}
+    <h2>Recognized Text:</h2>
+    <p>{{ text }}</p>
+    {% endif %}
+
+    {% if search_result %}
+    <h2>ASR.xlsx_data:</h2>
+    <table>
+         <!--<thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                
+            </tr> 
+        </thead>-->
+        <!--<tbody>
+            {% for row in search_result %}
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+</body>
+</html> -->
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Recognition</title>
+    <link rel="stylesheet" href="reg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+        body{
+            background-color: aqua;
+            
+            
+        }
+    </style>
+</head>
+<body >
+    <div class="box1"></div>
+    <h1>Speech Recognition</h1>
+    <form action="/recognize" method="POST">
+        <button type="submit">Start Recording</button>
+    </form></div>
+    <div class="box2">
+    {% if text %}
+    <h2>Recognized Text:</h2>
+    <p>{{ text }}</p></div>
+    {% endif %}
+
+    {% if search_result %}
+    <div class="box4"><h2>ASR.xlsx_data:</h2></div>
+    <div class="box3">
+    <table>
+        <tbody>
+            {% for row in search_result %}
+            
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table></div>
+    {% endif %}
+</body>
+</html> -->
+
+
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Recognition</title>
+</head>
+<body>
+    <h1>Speech Recognition</h1>
+    
+    <form action="/recognize" method="POST">
+        <button type="submit">Start Recording</button>
+    </form>
+    
+    {% if text %}
+    <h2>Recognized Text:</h2>
+    <p>{{ text }}</p>
+    {% endif %}
+
+    {% if search_result %}
+    <h2>ASR.xlsx_data:</h2>
+    <table>
+         <!--<thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                
+            </tr> 
+        </thead>-->
+        <!--<tbody>
+            {% for row in search_result %}
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+</body>
+</html> -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Recognition</title>
+    <link rel="stylesheet" href="reg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+        body{
+            background-color: rgb(36, 190, 190); 
+            background-image: url('./static/meadical.jpg'); 
+            
+        }
+    </style>
+</head>
+<body >
+    <!-- <img src="./static/meadical.jpg"></img> -->
+    <div class="box1"></div>
+    <h1>Speech Recognition</h1>
+    <form action="/recognize" method="POST">
+        <button type="submit">Start Recording</button>
+    </form></div>
+    <div class="box2">
+    {% if text %}
+    <h2>Recognized Text:</h2>
+    <p>{{ text }}</p></div>
+    {% endif %}
+
+    {% if search_result %}
+    <div class="box4"><h2>ASR.xlsx_data:</h2></div>
+    <div class="box3">
+    <table>
+        <tbody>
+            {% for row in search_result %}
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table></div>
+    {% endif %}
+</body>
+</html>
